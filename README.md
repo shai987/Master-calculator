@@ -18,7 +18,7 @@ npm run start
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- | 
-| **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv, currency-converter-lt, chalk and the devDependencies: eslint and readme-md-generator  |
+| **node_modules**         | Contains the installed packages: express, mongoose, pug, dotenv, currency-converter-lt, chalk and the devDependencies: eslint  |
 | **src**                  | Contains the source code                                                                      |
 | **src/models**           | Contains log model file                                                |
 | **src/public**           | Contains the main CSS file and 404 error file                                                 |
