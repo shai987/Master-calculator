@@ -1,0 +1,34 @@
+doctype html
+html(dir="ltr" lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/main.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap")
+    title Average 
+  body
+  header 
+      h1 Average
+  div.form-style-2.container
+    div.form-style-2-heading Provide number of fileds
+    form(method='GET') 
+       label(for="numberOfFiled")
+         span Number of fileds
+         input(type="number", id="numberOfFiled", name="numberOfFiled",min=1, max=100, value=numberOfFiled, class="input-field")
+         br
+       input(type="submit", value="Go", class='btn')
+    br
+
+  if flag 
+      div.form-style-2.container
+        div.form-style-2-heading Provide your info  
+        form(method='POST') 
+         - for (let i = 1; i <= numberOfFiled; i++)
+           label(for="grade"+i)
+             span grade #{i}
+             input(type="number", id="grade"+i, name="grade"+i, min=0, max=100, value=grade[i-1], class="input-field")
+             br
+             br
+         input(type="submit", value="Check result", class='btn')
+      p #{text}

@@ -1,0 +1,39 @@
+doctype html
+html(dir="ltr" lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/main.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap")
+    title Currency Exchange
+  body
+  header 
+      h1 Currency Exchange
+  div.form-style-2.container
+    div.form-style-2-heading Provide your info
+    form(method='POST')
+      label(for="from")
+        span From:
+      select(name="from" class="select-field" id="from" value="--CHOOSE--" required)
+            option(value="CHOOSE") --CHOOSE--
+            - for (let p in currencies)
+                  option(value=p, selected = from!=p ? false : true) #{currencies[p]} (#{p})
+      br
+      br 
+      label(for="to")
+        span To:
+      select(name="to" class="select-field" id="to" value="--CHOOSE--" required)
+            option(value="CHOOSE") --CHOOSE--
+             - for (let p in currencies)
+                  option(value=p, selected = to!=p ? false : true) #{currencies[p]} (#{p})
+      br
+      br 
+      label(for="amount")
+        span Amount:
+      input(type="number", id="amount", name="amount", min=1, value=amount, class="input-field", required)
+      br 
+      br
+      br
+      input(type="submit", value="Check result", class='btn')
+    p #{text}
