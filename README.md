@@ -1,13 +1,6 @@
-# Students Management Application
+# Master Calculator
 
-This project represents a student management application designed by CRUD philosophy. It can execute several actions against the DB – add, retrieve, update, and delete student details.
-
-## Features 
-- Management of two main DBs: 
-  1. DB for the student management app
-  2. DB that documents every path and method that have been used by the client (activated automatically).
-- Two optional run modes: HTML & JSON 
-- Client application (only in JSON mode) – this app reads a provided text file which include one of the CRUD commands. Then the app commits the specific command.
+Node.js express application that implements certain functionality in different paths.
 
 ## Installation
 
@@ -17,16 +10,9 @@ npm install
 
 ## Usage
 
-Run mode HTML:
 ```bash
 npm run start
 ```
-Run mode JSON:
-```bash
-npm start [--json]
-```
-Note: in order to activate the client app you must run "node client.js" in separate terminal.
-
 
 ## Project Components
 
@@ -55,15 +41,10 @@ Note: in order to activate the client app you must run "node client.js" in separ
 * Github: [@shai987](https://github.com/shai987)
 * LinkedIn: [@Shai Geffen](https://linkedin.com/in/shai-geffen-24373721a)
 
-👤 **Ron Eli**
-
-* Github: [@ron](https://github.com/)
-* LinkedIn: [@Ron Eli](https://linkedin.com/in/ron-eli-ba47a9226)
-
-
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shai987/Students-Management-Application/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shai987/
+Master-calculator/issues).
 
 ## Show your support
 
@@ -71,8 +52,8 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [Shai Geffen & Ron Eli](https://github.com/shai987).<br />
-This project is [MIT](https://github.com/shai987/Students-Management-Application/blob/master/LICENSE) licensed.
+Copyright © 2022 [Shai Geffen](https://github.com/shai987).<br />
+This project is [MIT](https://github.com/shai987/Master-calculator/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
